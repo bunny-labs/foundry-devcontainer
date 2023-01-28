@@ -14,4 +14,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: bunny-labs/foundry-devcontainer:latest
+          tags: ghcr.io/bunny-labs/foundry-devcontainer:latest
