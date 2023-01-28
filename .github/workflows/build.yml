@@ -8,8 +8,10 @@ on:
 jobs:
   build-devcontainer:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     steps:
-      - uses: actions/checkout@v3
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
