@@ -1,0 +1,11 @@
+{
+  "image": "ghcr.io/bunny-labs/foundry-devcontainer:main",
+  // This fixes the issue where VS Code complains about unsafe repositories at launch because of
+  // a file owner mismatch between bare metal and container user
+  "postStartCommand": "git config --global --add safe.directory \"*\"",
+  "customizations": {
+    "vscode": {
+      "extensions": ["JuanBlanco.solidity", "esbenp.prettier-vscode"]
+    }
+  }
+}
