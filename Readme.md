@@ -4,6 +4,8 @@ A container image for working on [Foundry](https://github.com/foundry-rs/foundry
 Based on `mcr.microsoft.com/devcontainers/base:ubuntu` with Foundry tools installed.
 See the [Dockerfile](./Dockerfile) for more details.
 
+This image is rebuilt nightly with the latest set of Foundry tools.
+
 ## Using it in a project
 
 To use this in a Foundry project, simply copy over the [`.devcontainer`](./.devcontainer/) folder.

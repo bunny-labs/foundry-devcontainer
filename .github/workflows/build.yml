@@ -6,6 +6,8 @@ on:
       - "main"
     paths:
       - "Dockerfile"
+  schedule:
+    - cron: "0 0 * * *"
 
 env:
   REGISTRY: ghcr.io
